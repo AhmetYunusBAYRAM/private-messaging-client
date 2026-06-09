@@ -11,8 +11,21 @@
 
 Geleneksel mesajlaşma platformlarının aksine, mesajlarınız sunucu dahil hiçbir üçüncü taraf tarafından okunamaz. Anahtarlarınız ve verileriniz tamamen sizin cihazınızda üretilir, şifrelenir ve saklanır.
 
-### 📸 Ekran Görüntüsü
-![Stealth-Chat Arayüzü](./public/screenshot.png)
+### 📸 Ekran Görüntüleri
+
+#### 1. Giriş ve Kayıt Ekranı
+Uygulamaya güvenli e-posta tabanlı kimlik doğrulama ile giriş yapılır.
+![Giriş Ekranı](./public/login_view.png)
+
+#### 2. Güvenli Sohbet Arayüzü
+Sesli mesaj gönderme, fotoğraf ekleme, silinen mesajlar (her iki taraftan da temizlenir) ve gerçek zamanlı SignalR bağlantısı sunar.
+![Sohbet Ekranı](./public/screenshot.png)
+
+#### 3. Uçtan Uca Güvenlik Kodu Doğrulama
+Kanalın dinlenmediğinden (Man-in-the-Middle) emin olmak için tarafların ortak kriptografik anahtarlarından üretilen benzersiz güvenlik kodlarını karşılaştırabilmesini sağlar.
+![Güvenlik Kodu Doğrulama](./public/security_code.png)
+
+---
 
 ### 🛠️ Öne Çıkan Özellikler
 *   **Uçtan Uca Şifreleme (E2EE):** Mesajlar alıcıya ulaşana kadar şifreli kalır. Şifreleme işlemleri için modern **Web Crypto API** standartları kullanılır.
@@ -59,8 +72,21 @@ Tarayıcınızda [http://localhost:3000](http://localhost:3000) adresine giderek
 
 Unlike traditional messaging platforms, your messages cannot be read by any third party, including the central server. Your cryptographic keys and chat history are generated, encrypted, and stored entirely on your local device.
 
-### 📸 Screenshot
-![Stealth-Chat UI](./public/screenshot.png)
+### 📸 Screenshots
+
+#### 1. Login & Registration Screen
+Provides secure email-based registration and authentication.
+![Login Screen](./public/login_view.png)
+
+#### 2. Secure Chat Interface
+Supports voice messages, photo attachments, message revocation (removing messages from both sides), and real-time SignalR communication.
+![Chat Screen](./public/screenshot.png)
+
+#### 3. End-to-End Security Code Verification
+Allows users to verify unique safety numbers derived from shared cryptographic key materials to prevent Man-in-the-Middle (MitM) attacks.
+![Security Code Verification](./public/security_code.png)
+
+---
 
 ### 🛠️ Key Features
 *   **End-to-End Encryption (E2EE):** Messages remain encrypted until they reach the recipient. Cryptographic operations leverage the industry-standard **Web Crypto API**:
