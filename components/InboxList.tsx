@@ -28,7 +28,8 @@ export default function InboxList() {
     senderEncryptedPayload: string;
     receiverEncryptedPayloads: Record<string, string>;
     isDeleted: boolean;
-  }, nickname: string, email: string): Promise<string> {
+  } | undefined | null, nickname: string, email: string): Promise<string> {
+    if (!msg) return "[Mesaj Yok]";
     if (msg.isDeleted) return "🚫 Bu mesaj silindi.";
     let payloadStr: string | null = null;
     if (msg.senderNickname === nickname) {
